@@ -18,6 +18,8 @@ header > .header-wrap {
   justify-content: space-between;
   margin: 0 auto;
   width: 90%;
+  max-width: 1280px;
+  /* background-color: #fff; */
   height: 80px;
   line-height: 80px;
   border-bottom: 1px solid #000;
@@ -63,12 +65,33 @@ header nav > ul > li:hover > a {
   font-weight: 600;
 }
 
+
 article {
+  margin: 0 auto;
   padding: 30px 0;
+  max-width: 1280px;
   height: 100%;
   text-align: center;
   border-bottom: 1px solid #000;
   background-color: #fff;
+  position: relative;
+}
+article#home {
+  max-width: 100%;
+}
+article::after {
+  content: "";
+  position: absolute;
+  top:-1px; left: -100%;
+  width: 100%; height: 1px;
+  background-color: #000;
+}
+article::before {
+  content: "";
+  position: absolute;
+  top:-1px; right: -100%;
+  width: 100%; height: 1px;
+  background-color: #000;
 }
 
 h2 {
@@ -78,7 +101,7 @@ h2 {
 
 .sec1 {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../search/img/main-visual.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(..//img/main-visual.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -139,7 +162,7 @@ h2 {
 
 .sec2 .tab-wrap .tab-content div img {
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .sec2 .tab-wrap .tab-content div img:hover {
@@ -231,7 +254,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .sec3 .park-content .park-sub .thmbs li img:hover {
@@ -263,7 +286,7 @@ h2 {
 }
 
 .sec4 .shop .img-container img {
-  transition: all 1s;
+  transition: all .8s;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -271,7 +294,7 @@ h2 {
 
 .sec4 .shop .img-container img:hover {
   opacity: 0.8;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .sec4 .shop .text-container {
@@ -328,7 +351,7 @@ h2 {
   left: 0;
   display: flex;
   flex-flow: row nowrap;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .sec6 .slides-container p {
@@ -369,51 +392,51 @@ h2 {
 }
 
 .sec6 .slides > .slides-container > p:nth-child(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-01.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(2) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-02.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(3) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-03.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(4) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-04.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-04.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(5) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-05.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-05.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(6) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-06.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-06.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(7) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-07.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-07.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(8) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-08.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-08.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(9) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-09.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-09.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(10) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-10.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-10.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(11) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-11.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-11.jpg);
 }
 
 .sec6 .slides > .slides-container > p:nth-child(12) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../search/img/sec5/sec05-12.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./../img/sec5/sec05-12.jpg);
 }
 
 .sec6 .slides-pagination {
@@ -488,6 +511,7 @@ h2 {
   flex-wrap: wrap;
   margin-bottom: 30px;
   width: 100%;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -501,7 +525,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .sec7 .tab__content div .tab__img-wrap .main-container img:hover {
@@ -525,7 +549,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .sec7 .tab__content div .tab__img-wrap .sub-container li img:hover {
